@@ -2,17 +2,12 @@ let randomizer;
 let shapes = [];
 let meta;
 
-
-window.addEventListener("unhandledrejection", event => {
-  console.warn(`UNHANDLED PROMISE REJECTION: ${event.reason}`);
-});
-
 /**
  * Preload function to fetch data etc...
  *
  * You should also be able to do calls to API etc...
  */
-async function preload() {
+function preload() {
 	const params =  new URLSearchParams(window.location.search);
 
 	// current owner (if known, else default to 0x0)
