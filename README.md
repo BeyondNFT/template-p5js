@@ -26,8 +26,7 @@ Go in the directory and start editing the different file as needed.
 
 You can edit the meta in `index.html` if you wish to change the name of the preview.
 
-
-## Upload & Mint
+## Upload and Mint
 
 When you're done with editing, you can load [Our Zip Archive Upload Page](https://beyondnft.io/create/zip-upload) fill the form, validate the preview and mint on any of our supported networks!
 
