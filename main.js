@@ -33,7 +33,7 @@ function preload() {
 	// get metadata.json if exist
 	const promise = new Promise((resolve, reject) => {
 		fetch(tokenURI)
-			.then(res => res.json)
+			.then(res => res.json())
 			.then(resolve)
 			.catch(reject)
 	});
