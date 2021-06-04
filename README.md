@@ -6,7 +6,6 @@ Documentation about how ZIP Archive upload on BeyondNFT: [https://www.notion.so/
 
 this is a very simple repository containing a few files to start, a function to create deterministic randomness based on a seed, and preload of metadata.
 
-
 you can start editing `main.js` update `preview.png` with your preview, zip the directory and upload it!
 
 ## Installation
@@ -21,15 +20,23 @@ Or download it directly from github's interface
 
 Go in the directory and start editing the different file as needed.
 
-`main.js` contains the JavaScript
-`main.css` contains the CSS
-`preview.png` is the preview file that you will see in listings.
+- `main.js` contains the JavaScript
+- `main.css` contains the CSS
+- `preview.png` is the preview file that you will see in listings.
 
 You can edit the meta in `index.html` if you wish to change the name of the preview.
+
 
 ## Upload & Mint
 
 When you're done with editing, you can load [Our Zip Archive Upload Page](https://beyondnft.io/create/zip-upload) fill the form, validate the preview and mint on any of our supported networks!
+
+## Documentation
+
+Documentation about how ZIP Archive upload on BeyondNFT: [https://www.notion.so/ZIP-Archive-Upload-173f86388a2f48cebd6cf5e9a1af7e16](https://www.notion.so/ZIP-Archive-Upload-173f86388a2f48cebd6cf5e9a1af7e16)
+
+Documentation of p5js: [Documentation p5js](https://p5js.org/reference/)
+
 
 ## Questions, Comments or Requests?
 
