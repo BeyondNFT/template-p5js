@@ -10,7 +10,36 @@
   <script type="text/javascript" src="p5.min.js"></script>
 </head>
 <body>
-
+	<script type="text/javascript">
+	  /**
+		 * BeyondNFT Helper.
+		 */
+		window.beyondHelpers = {
+			/**
+			* beyondHelpers.get(paramName) returns a queryParameter value
+			* Usage: const owner = beyondHelpers.get('owner');
+			* const seed =beyondHelpers.get('seed');
+			* ...
+			* to get parameters or Factory Data
+			*/
+			get(name, defaultValue = null) {
+				const params =  new URLSearchParams(window.location.search);
+				return params.has(name) ? params.get(name) : defaultValue
+			},
+			/**
+			* The token can access its own metadata using this
+			* Usage: await beyondHelpers.getMetadata()
+			*/
+			async getMetadata() {
+				let metadata = {};
+				const tokenURI = this.get('tokenURI');
+				if (tokenURI) {
+					metadata = await fetch(tokenURI).then(res => res.json());
+				}
+				return metadata;
+			}
+		};
+	</script>
   <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
